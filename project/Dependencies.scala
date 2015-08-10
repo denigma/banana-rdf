@@ -116,7 +116,7 @@ object Dependencies {
   val sesameSailNativeRdf = "org.openrdf.sesame" % "sesame-sail-nativerdf" % sesameVersion
   val sesameRepositorySail = "org.openrdf.sesame" % "sesame-repository-sail" % sesameVersion
 
-  val bigdataVersion = "1.5.1"
+  val bigdataVersion = "1.5.2"
   val bigdataSesameVersion = "2.7.13"
   val bigdataLuceneVersion = "3.0.0"//bigdata uses outdated version of lucene
 

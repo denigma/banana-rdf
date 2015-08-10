@@ -14,8 +14,8 @@ object BuildSettings {
 
   val buildSettings = publicationSettings ++ defaultScalariformSettings ++ Seq(
     organization := "org.w3",
-    scalaVersion := "2.11.6",
-    crossScalaVersions := Seq("2.11.6", "2.10.5"),
+    scalaVersion := "2.11.7",
+    crossScalaVersions := Seq("2.11.7", "2.10.5"),
     javacOptions ++= Seq("-source", "1.7", "-target", "1.7"),
     fork := false,
     parallelExecution in Test := false,
@@ -215,7 +215,7 @@ object BananaRdfBuild extends Build {
   lazy val bigdata = bigdataM
     .project(Jvm)
     .settings(
-      resolvers += "Bigdata releases" at "http://systap.com/maven/releases/",
+      resolvers += "Bigdata releases" at "http://www.systap.com/maven/releases/",
       resolvers += "apache-repo-releases" at "http://repository.apache.org/content/repositories/releases/",
       resolvers += "nxparser-repo" at "http://nxparser.googlecode.com/svn/repository/",
       libraryDependencies += bigdataDatabase,
